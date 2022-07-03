@@ -1,7 +1,27 @@
+import { NavLink } from 'react-router-dom';
+
 import './styles.css';
 
 export const Navbar = () => {
   return(
-    <h1>Navbar</h1>        
+    <nav>
+      <NavLink to="/">
+        Mini <span>Blog</span>
+      </NavLink>
+
+      <ul>
+        <li>
+          <NavLink to="/">
+            Home
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/about">
+            Sobre
+          </NavLink>
+        </li>
+      </ul>
+    </nav> 
   )
 }
